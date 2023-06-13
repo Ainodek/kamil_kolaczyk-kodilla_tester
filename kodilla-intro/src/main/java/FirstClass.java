@@ -1,14 +1,14 @@
 public class FirstClass {
     public static void main(String[] args) {
 
-        Notebook notebook = new Notebook("MSI",600, 1000, 2010);
+        Notebook notebook = new Notebook("MSI", 600, 1000, 2010);
         System.out.println(notebook.producent + " weight: " + notebook.weight + " and price: " + notebook.price);
         notebook.checkPrice();
         notebook.checkWeight();
         notebook.comparesYearPrice();
         System.out.println("-----");
 
-        Notebook heavyNotebook = new Notebook("Gigabyte",2000, 1500, 2023);
+        Notebook heavyNotebook = new Notebook("Gigabyte", 2000, 1500, 2023);
         System.out.println(heavyNotebook.producent + " weight: " + heavyNotebook.weight + " and price: " + heavyNotebook.price);
         heavyNotebook.checkPrice();
         heavyNotebook.checkWeight();
@@ -22,7 +22,7 @@ public class FirstClass {
         oldNotebook.comparesYearPrice();
         System.out.println("-----");
 
-        Notebook lenovoNotebook = new Notebook("Lenovo", 2500, 900,2021);
+        Notebook lenovoNotebook = new Notebook("Lenovo", 2500, 900, 2021);
         System.out.println(lenovoNotebook.producent + " weight: " + lenovoNotebook.weight + " and price: " + lenovoNotebook.price);
         lenovoNotebook.checkPrice();
         lenovoNotebook.checkWeight();
@@ -36,7 +36,7 @@ public class FirstClass {
         dellNotebook.comparesYearPrice();
         System.out.println("-----");
 
-        Notebook toshibaNotebook = new Notebook("Toshiba",2000, 1500, 2009);
+        Notebook toshibaNotebook = new Notebook("Toshiba", 2000, 1500, 2009);
         System.out.println(toshibaNotebook.producent + " weight: " + toshibaNotebook.weight + " and price: " + toshibaNotebook.price);
         toshibaNotebook.checkPrice();
         toshibaNotebook.checkWeight();
