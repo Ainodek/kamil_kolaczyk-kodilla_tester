@@ -42,5 +42,6 @@ public class User {
                 System.out.println(users[i].getName());
             }
         }
+
     }
 }

@@ -32,5 +32,6 @@ public class RandomNumbers {
         System.out.println("Sum of random numbers: " + sumRandom());
         System.out.println("MIN Value: " + minValue());
         System.out.println("MAX Value: " +maxValue());
+
     }
 }
