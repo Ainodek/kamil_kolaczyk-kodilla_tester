@@ -2,6 +2,24 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car {
     int speed = 0;
+    int maxSeed = random.nextInt(150, 251);
+    int yearOfProduction = random.nextInt(1990, 2024);
+    int horsePower = random.nextInt(150, 301);
+
+    @Override
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    @Override
+    public int getYearProduction() {
+        return yearOfProduction;
+    }
+
+    @Override
+    public int getMaxSpeed() {
+        return maxSeed;
+    }
 
     @Override
     public int getSpeed() {
