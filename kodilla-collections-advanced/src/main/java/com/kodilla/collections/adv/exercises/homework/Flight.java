@@ -16,12 +16,12 @@ public class Flight {
         this.arrival = arrival;
     }
 
-    public Flight getDeparture() {
-        return new Flight();
+    public String getDeparture() {
+        return departure;
     }
 
-    public Flight getArrival() {
-        return new Flight();
+    public String getArrival() {
+        return arrival;
     }
 
     @Override

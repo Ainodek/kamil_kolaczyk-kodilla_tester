@@ -11,9 +11,9 @@ public class FlightRepository {
         flights.add(new Flight("Tokio", "Moscow"));
         flights.add(new Flight("Tokio", "Kiev"));
         flights.add(new Flight("Moscow", "Warsaw"));
-
         return flights;
     }
+
 }
 
 
