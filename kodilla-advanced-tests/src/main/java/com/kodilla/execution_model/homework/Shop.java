@@ -1,7 +1,6 @@
 package com.kodilla.execution_model.homework;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,7 +11,7 @@ public class Shop {
     public void addOrder(Order order){
         this.listOfOrders.add(order);
     }
-    public List<Order> orderFromPeriod(LocalDateTime from, LocalDateTime to){
+    public List<Order> orderFromPeriod(LocalDate from, LocalDate to){
         List<Order> period = new ArrayList<>();
         for(Order orders : listOfOrders){
             if(orders.getDate().isAfter(from) && orders.getDate().isBefore(to))
@@ -21,10 +20,10 @@ public class Shop {
         return period;
     }
     public List<Order> orderByValues(int from, int to){
-            listOfOrders.stream()
-                    .map(o -> o.getValue()>from && o.getValue()<to)
+            List<Order> orderByValues = listOfOrders.stream()
+                    .filter(o -> o.getValue()>from && o.getValue()<to)
                     .collect(Collectors.toList());
-            return listOfOrders;
+            return orderByValues;
             }
     public int numberOfOrders(){
         return listOfOrders.size();

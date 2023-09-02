@@ -1,15 +1,16 @@
 package com.kodilla.execution_model.homework;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Order {
     double value;
     String username;
-    LocalDateTime date;
+    LocalDate date;
 
-    public Order(double value, String username, LocalDateTime date) {
+    public Order(double value, String username, LocalDate date) {
         this.value = value;
         this.username = username;
         this.date = date;
@@ -23,7 +24,7 @@ public class Order {
         return username;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
